@@ -10,6 +10,10 @@
 * 3.回调方法看看有没有注解可以标识主线程;
 * 4.处理TODO;
 
+## 需要做两个版本
+* 1.网络访问基于Apache HttpClient版本;
+* 2.网络访问基于OKHttp ;
+
 ## License
 
     Copyright 2017, Halohoop
