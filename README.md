@@ -13,6 +13,7 @@
 ## 需要做两个版本
 * 1.网络访问基于Apache HttpClient版本;
 * 2.网络访问基于OKHttp ;
+* 3.json解析改用接口，传入实现的方式，默认alibaba的fastjson;
 
 ## License
 
