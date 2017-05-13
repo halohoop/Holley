@@ -3,7 +3,6 @@ package com.halohoop.holley.http.impls;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.alibaba.fastjson.JSON;
 import com.halohoop.holley.http.interfaces.IDataListener;
 import com.halohoop.holley.http.interfaces.IHttpListener;
 import com.halohoop.holley.utils.Utils;
@@ -19,6 +18,10 @@ import java.io.InputStreamReader;
  * Created by Pooholah on 2017/5/13.
  */
 
+/**
+ *
+ * @param <M> 实体
+ */
 public class JsonHttpListener<M> implements IHttpListener {
 
     private Class<M> mResponse;
@@ -43,8 +46,7 @@ public class JsonHttpListener<M> implements IHttpListener {
             inputStream = httpEntity.getContent();
             //得到返回的数据，此处还是在子线程，接下去会有切换线程
             String content = getContent(inputStream);
-            final M m = JSON.parseObject(content, mResponse);
-
+            final M m = Utils.parseObject(content, mResponse);
             //切换线程
             mHandler.post(new Runnable() {
                 @Override

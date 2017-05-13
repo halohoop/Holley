@@ -1,8 +1,8 @@
 package com.halohoop.holley.http.impls;
 
-import com.alibaba.fastjson.JSON;
 import com.halohoop.holley.http.beans.RequestHolder;
 import com.halohoop.holley.http.interfaces.IHttpService;
+import com.halohoop.holley.utils.Utils;
 
 import java.io.UnsupportedEncodingException;
 
@@ -25,7 +25,7 @@ public class HttpTask<T> implements Runnable {
         this.mHttpService.setHttpListener(requestHolder.getHttpListener());
         this.mHttpService.setUrl(requestHolder.getUrl());
         T requestInfo = requestHolder.getRequestInfo();
-        String s = JSON.toJSONString(requestInfo);
+        String s = Utils.toJSONString(requestInfo);
         try {
             mHttpService.setRequestData(s.getBytes("UTF-8"));
         } catch (UnsupportedEncodingException e) {

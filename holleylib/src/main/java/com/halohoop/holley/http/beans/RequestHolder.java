@@ -8,7 +8,7 @@ import com.halohoop.holley.http.interfaces.IHttpService;
  */
 
 /**
- * 为了给调用层的统一一下传入的对象，不管是的网络请求 还是 下载 都使用这个。
+ * 为了给调用层传入的数据封装一下，不管是的网络请求 还是 下载 都使用这个。
  * @param <T>
  */
 public class RequestHolder<T> {
