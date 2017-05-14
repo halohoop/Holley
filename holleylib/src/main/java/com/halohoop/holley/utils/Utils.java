@@ -21,6 +21,7 @@ public class Utils {
     public static <T> T parseObject(String content, Class<T> clazz) {
         return JSON.parseObject(content, clazz);
     }
+
     public static String toJSONString(Object object) {
         return JSON.toJSONString(object);
     }
