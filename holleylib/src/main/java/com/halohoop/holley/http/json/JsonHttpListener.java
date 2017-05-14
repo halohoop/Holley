@@ -1,10 +1,10 @@
-package com.halohoop.holley.http.impls;
+package com.halohoop.holley.http.json;
 
 import android.os.Handler;
 import android.os.Looper;
 
-import com.halohoop.holley.http.interfaces.IDataListener;
-import com.halohoop.holley.http.interfaces.IHttpListener;
+import com.halohoop.holley.http.core.interfaces.IDataListener;
+import com.halohoop.holley.http.core.interfaces.IHttpListener;
 import com.halohoop.holley.utils.Utils;
 
 import org.apache.http.HttpEntity;

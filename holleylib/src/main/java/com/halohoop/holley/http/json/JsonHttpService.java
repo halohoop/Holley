@@ -1,7 +1,7 @@
-package com.halohoop.holley.http.impls;
+package com.halohoop.holley.http.json;
 
-import com.halohoop.holley.http.interfaces.IHttpListener;
-import com.halohoop.holley.http.interfaces.IHttpService;
+import com.halohoop.holley.http.core.interfaces.IHttpListener;
+import com.halohoop.holley.http.core.interfaces.IHttpService;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;

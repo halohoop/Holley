@@ -1,7 +1,7 @@
-package com.halohoop.holley.http.impls;
+package com.halohoop.holley.http.core.managers;
 
-import com.halohoop.holley.http.beans.RequestHolder;
-import com.halohoop.holley.http.interfaces.IHttpService;
+import com.halohoop.holley.http.core.beans.RequestHolder;
+import com.halohoop.holley.http.core.interfaces.IHttpService;
 import com.halohoop.holley.utils.Utils;
 
 import java.io.UnsupportedEncodingException;

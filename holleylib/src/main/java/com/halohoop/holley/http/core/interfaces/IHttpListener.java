@@ -1,4 +1,4 @@
-package com.halohoop.holley.http.interfaces;
+package com.halohoop.holley.http.core.interfaces;
 
 /**
  * Created by Pooholah on 2017/5/13.

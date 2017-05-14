@@ -12,9 +12,9 @@ public class Utils {
     private final static boolean DEBUG = true;
     private final static String TAG = "HolleyLog--";
 
-    public static void logI(String s) {
+    public static void logI(Object s) {
         if (DEBUG) {
-            Log.i(TAG, s);
+            Log.i(TAG, s + "");
         }
     }
 

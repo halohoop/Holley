@@ -1,7 +1,7 @@
-package com.halohoop.holley.http.beans;
+package com.halohoop.holley.http.core.beans;
 
-import com.halohoop.holley.http.interfaces.IHttpListener;
-import com.halohoop.holley.http.interfaces.IHttpService;
+import com.halohoop.holley.http.core.interfaces.IHttpListener;
+import com.halohoop.holley.http.core.interfaces.IHttpService;
 
 /**
  * Created by Pooholah on 2017/5/13.

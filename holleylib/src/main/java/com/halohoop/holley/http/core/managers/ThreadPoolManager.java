@@ -1,4 +1,4 @@
-package com.halohoop.holley.http.managers;
+package com.halohoop.holley.http.core.managers;
 
 /**
  * Created by Pooholah on 2017/5/14.
@@ -43,7 +43,7 @@ public class ThreadPoolManager {
             while (true) {
                 FutureTask<?> futureTask = null;
                 try {
-                    futureTask = (FutureTask<?>) mTaskQueue.take();//阻塞时
+                    futureTask = (FutureTask<?>) mTaskQueue.take();//阻塞式方法
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
